@@ -1,0 +1,19 @@
+# OSINT Threat Intelligence Tool
+# Requirements
+# Install with: pip install -r requirements.txt
+
+# WHOIS queries
+python-whois==0.9.4
+
+# HTTP requests (GitHub, HIBP APIs)
+requests==2.31.0
+
+# Anthropic API client
+anthropic==0.25.0
+
+# Jupyter notebook environment
+jupyter==1.0.0
+ipykernel==6.29.0
+
+# Pretty display inside notebooks
+ipython==8.22.0

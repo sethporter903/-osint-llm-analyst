@@ -1,0 +1,51 @@
+# ── API Keys and Environment ──────────────────────────────────────────
+.env
+.env.local
+.env.*
+*.key
+secrets.json
+
+# ── Generated Reports and Exports ────────────────────────────────────
+# These may contain PII from WHOIS, HIBP, and GitHub queries.
+# Never commit real target data to a public repository.
+report_*.md
+data_*.json
+
+# ── Jupyter Notebook Artifacts ────────────────────────────────────────
+# Notebook checkpoints and cached outputs can contain
+# API responses with sensitive data baked in.
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Strip notebook outputs before committing —
+# cell outputs may contain real query results.
+# Use: jupyter nbconvert --clear-output --inplace osint_report.ipynb
+# before every git add of the notebook.
+
+# ── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual Environments ──────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── OS Artifacts ──────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
